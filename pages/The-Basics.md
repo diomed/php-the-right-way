@@ -182,22 +182,22 @@ echo 'This is my string, look at how pretty it is.';    // nema potrebe za parsi
 
 #### Dvostruki navodnici
 
-Dvostruki navodnici predstavljaju pravi "švajcarski vojnički nož" u kontekstu stringova. Oni ne samo da će da parsiraju
-promenljive pomenute u prethodnom delu, ali i mnoge druge specijalne znakove, kao što su `\n` za novi red, `\t` za tab, itd.
+Dvostruki navodnici predstavljaju pravi "švicarski vojnički nož" u kontekstu stringova. Oni ne samo da će parsirati
+promjenjive spomenute u prethodnom dijelu, ali i mnoge druge specijalne znakove, kao što su `\n` za novi red, `\t` za tab, itd.
 
 {% highlight php %}
 <?php
-echo 'phptherightway is ' . $adjective . '.'     // primer sa jednostrukim navodnicima koji koristi konkatenaciju
+echo 'phptherightway is ' . $adjective . '.'     // primjer sa jednostrukim navodnicima koji koristi konkatenaciju
     . "\n"                                       // za umetanje promenljivih
     . 'I love learning' . $code . '!';
 
 // vs
 
-echo "phptherightway is $adjective.\n I love learning $code!"  // Umesto konkatenacije, dvostruki navodnici nam omogućavaju
-                                                               // korišćenje stringova koji se mogu parsirati
+echo "phptherightway is $adjective.\n I love learning $code!"  // Umjesto konkatenacije, dvostruki navodnici nam omogućavaju
+                                                               // korištenje stringova koji se mogu parsirati
 {% endhighlight %}
 
-Dvostruki navodnici mogu da sadrže promenljive, a to se naziva "interpolacija".
+Dvostruki navodnici mogu dasadržavati promjenjive, a to se naziva "interpolacija".
 
 {% highlight php %}
 <?php
@@ -205,10 +205,10 @@ $juice = 'plum';
 echo "I like $juice juice";    // Ispis: I like plum juice
 {% endhighlight %}
 
-Pri korišćenju interpolacije, često se dešava da promenljiva "dodiruje" neki drugi karakter u stringu. Ovo će
-za rezultat imati konflikt u smislu razlikovanja imena promenljive od samog karaktera.
+Pri korištenju interpolacije, često se događa da promjenjiva "dodiruje" neki drugi karakter u stringu. Ovo će
+za rezultat imati konflikt u smislu razlikovanja imena promjenjive od samog karaktera.
 
-U cilju prevazilaženja ovog problema, potrebno je uokviriti promenljivu sa vitičastim zagradama.
+U cilju nadilaženja ovog problema, potrebno je uokviriti promjenjivu sa vitičastim zagradama.
 
 {% highlight php %}
 <?php
@@ -221,7 +221,7 @@ $juice = 'plum';
 echo "I drank some juice made of {$juice}s";    // $juice će biti parsirano
 
 /**
- * Složenije promenljive takođe mogu biti parsirane unutar vitičastih zagrada.
+ * Složenije promjenjive također mogu biti parsirane unutar vitičastih zagrada.
  */
 
 $juice = array('apple', 'orange', 'plum');
@@ -233,7 +233,7 @@ echo "I drank some juice made of {$juice[1]}s";   // $juice[1] će biti parsiran
 #### Nowdoc sintaksa
 
 Nowdoc sintaksa je predstavljena u verziji 5.3 i interno radi na isti način kao jednostruki navodnici, pri čemu je
-prevashodno namenjena za pisanje stringova u više redova bez potrebe za konkatenacijom.
+prevashodno namijenjena za pisanje stringova u više redova bez potrebe za konkatenacijom.
 
 {% highlight php %}
 <?php
@@ -242,7 +242,7 @@ Example of string
 spanning multiple lines
 using nowdoc syntax.
 $a does not parse.
-EOD;                        // završni 'EOD' mora biti u novom redu i kranje ulevo
+EOD;                        // završni 'EOD' mora biti u novom redu i krajnje ulijevo
 
 /**
  * Ispis:
@@ -258,7 +258,7 @@ EOD;                        // završni 'EOD' mora biti u novom redu i kranje ul
 
 #### Heredoc sintaksa
 
-Heredoc sintaksa interno radi na isti način kao dvostruki navodnici, pri čemu je prevashodno namenjena
+Heredoc sintaksa interno radi na isti način kao dvostruki navodnici, pri čemu je prevashodno namijenjena
 za pisanje stringova u više redova bez potrebe za konkatenacijom.
 
 {% highlight php %}
@@ -270,7 +270,7 @@ Example of string
 spanning multiple lines
 using heredoc syntax.
 $a are parsed.
-EOD;                        // završni 'EOD' mora biti u novom redu i kranje ulevo
+EOD;                        // završni 'EOD' mora biti u novom redu i krajnje ulijevo
 
 /**
  * Ispis:
@@ -284,27 +284,27 @@ EOD;                        // završni 'EOD' mora biti u novom redu i kranje ul
 
 * [Heredoc sintaksa](http://php.net/language.types.string#language.types.string.syntax.heredoc)
 
-### Šta je brže?
+### Što je brže?
 
-Postoji mit o tome da su jednostruki navodnici nešto brži od dvostrukih, a to u osnovi nije tačno.
+Postoji mit o tome da su jednostruki navodnici nešto brži od dvostrukih, a to u osnovi nije točno.
 
-Ako definišete string i pritom nemate konkatenaciju vrednosti, onda će stringovi sa jednostrukim i dvostrukim
-navodnicima biti u potpunosti ista. Oba rešenja će biti podjednako brza.
+Ako definirate string i pritom nemate konkatenaciju vrijednosti, onda će stringovi sa jednostrukim i dvostrukim
+navodnicima biti u potpunosti ista. Oba rješenja će biti podjednako brza.
 
-Ako vršite konkatenaciju više stringova ili vršite interpolaciju promenljivih u string sa dvostrukim navodnicima,
-onda se rezultati mogu razlikovati. Ako radite sa malim brojem promenljivih, konkatenacija će biti neznatno brža.
-A u slučaju dosta promenljivih, interpolacija će biti nešto brža.
+Ako vršite konkatenaciju više stringova ili vršite interpolaciju promjenjivih u string sa dvostrukim navodnicima,
+onda se rezultati mogu razlikovati. Ako radite sa malim brojem promjenjivih, konkatenacija će biti neznatno brža.
+A u slučaju dosta promjenjivih, interpolacija će biti nešto brža.
 
-Nezavisno od toga šta radite sa stringovima, nijedan od ova dva tipa neće imati značajan uticaj na vašu aplikaciju.
-Pokušaj prepravke kôda sa ciljem korišćenja jednog ili drugog tipa je uzaludan posao, tako da izbegavajte te
-mikro-optimizacije osim ako zaista razumete značenje i uticaj njihov razlika.
+Neovisno od toga šta radite sa stringovima, nijedan od ova dva tipa neće imati značajan utjecaj na vašu aplikaciju.
+Pokušaj prepravke kôda sa ciljem korištenja jednog ili drugog tipa je uzaludan posao, tako da izbjegavajte te
+mikro-optimizacije osim ako zaista razumijete značenje i utjecaj njihovih razlika.
 
 * [Razbijanje mita o performansama jednostrukih navodnika](http://nikic.github.io/2012/01/09/Disproving-the-Single-Quotes-Performance-Myth.html)
 
 
 ## Ternarni operatori
 
-Ternarni operatori predstavljaju odličan način za uštedu kôda, ali programeri često preteruju u njihovom korišćenju.
+Ternarni operatori predstavljaju odličan način za uštedu kôda, ali programeri često pretjeruju u njihovom korištenju.
 Iako ternarni operatori mogu biti ugnježdeni, preporuka je da se pišu u istoj liniji radi preglednosti.
 
 {% highlight php %}
@@ -313,14 +313,14 @@ $a = 5;
 echo ($a == 5) ? 'yay' : 'nay';
 {% endhighlight %}
 
-Nasuprot ovome, sledi primer koji kompromituje sve vidove preglednosti u cilju smanjenja broja linija kôda:
+Nasuprot ovome, slijedi primjer koji kompromitira sve vidove preglednosti u cilju smanjenja broja linija kôda:
 
 {% highlight php %}
 <?php
 echo ($a) ? ($a == 5) ? 'yay' : 'nay' : ($b == 10) ? 'excessive' : ':(';
 {% endhighlight %}
 
-Za povratnu vrednost u slučaju ternarnih operatora koristite ispravnu sintaksu:
+Za povratnu vrijednost u slučaju ternarnih operatora koristite ispravnu sintaksu:
 
 {% highlight php %}
 <?php
@@ -334,7 +334,7 @@ return ($a == 5) ? 'yay' : 'nope';    // ovaj primer će vratiti 'yay'
 
 {% endhighlight %}
 
-Treba pomenuti i to da nema potrebe da koristite ternarni operator u slučaju vraćanja bool vrednosti.
+Treba spomenuti i to da nema potrebe da koristite ternarni operator u slučaju vraćanja bool vrijednosti.
 Na primer:
 
 {% highlight php %}
@@ -349,12 +349,12 @@ return $a == 3; // vraća true ili false ako je $a == 3
 
 {% endhighlight %}
 
-Ovo važi i za sve druge operacije (===, !==, !=, ==, itd.).
+Ovo vrijedi i za sve druge operacije (===, !==, !=, ==, itd.).
 
-#### Korišćenje zagrada sa ternarnim operatorima za formatiranje i funkcionalnost
+#### Korištenje zagrada sa ternarnim operatorima za formatiranje i funkcionalnost
 
-Pri korišćenju ternarnog operatora, zagrade mogu biti značajne u cilju poboljšanja preglednosti, ali i
-stvaranja unija u okviru blokova izraza. Primer u kojem zagrade nisu neophodne:
+Pri korištenju ternarnog operatora, zagrade mogu biti značajne u cilju poboljšanja preglednosti, ali i
+stvaranja unija u okviru blokova izraza. Primjer u kojem zagrade nisu neophodne:
 
 {% highlight php %}
 <?php
@@ -367,16 +367,16 @@ $a = 3;
 return $a == 3 ? "yay" : "nope"; // vraća 'yay' ili 'nope' ako je $a == 3
 {% endhighlight %}
 
-Zagrade takođe nude mogućnost stvaranja unija u okviru blokova izraza, pri čemu se blok proverava u celosti.
-To možemo videti u sledećem primeru koji će vratiti true ako su oba uslova ($a == 3 i $b == 4) ispunjena i
-ako je $c == 5 takođe tačno.
+Zagrade također nude mogućnost stvaranja unija u okviru blokova izraza, pri čemu se blok provjerava u cijelosti.
+To možemo vidjeti u sljedećem primjeru koji će vratiti true ako su oba uvjeta ($a == 3 i $b == 4) ispunjena i
+ako je $c == 5 također točno.
 
 {% highlight php %}
 <?php
 return ($a == 3 && $b == 4) && $c == 5;
 {% endhighlight %}
 
-Još jedan primer je sledeći kôd koji vraća true ako je ($a != 3 i $b != 4) ili je $c == 5:
+Još jedan primjer je sljedeći kôd koji vraća true ako je ($a != 3 i $b != 4) ili je $c == 5:
 
 {% highlight php %}
 <?php
@@ -385,11 +385,11 @@ return ($a != 3 && $b != 4) || $c == 5;
 
 * [Ternarni operatori](http://php.net/language.operators.comparison)
 
-## Definisanje/deklarisanje promenljivih
+## Definiranje/deklariranje promenljivih
 
-Programeri ponekad pokušavaju da učine kôd "čistijim" tako što će deklarisati neke promenljive određenim imenima.
-To rezultuje povećanjem memorije koje će potrošiti neka skripta. Primera radi, ako imamo neki string veličine
-1MB, upisivanjem istog u neku promenljivu biste povećali korišćenje memorije na 2MB:
+Programeri ponekad pokušavaju učiniti kôd "čistijim" tako što će deklarirati neke promjenljive određenim imenima.
+To rezultira povećanjem memorije koje će potrošiti neka skripta. Primjera radi, ako imamo neki string veličine
+1MB, upisivanjem istog u neku promjenjivu biste povećali korištenje memorije na 2MB:
 
 {% highlight php %}
 <?php
@@ -401,4 +401,4 @@ echo $about;
 echo 'A very long string of text';        // koristi 1MB memorije
 {% endhighlight %}
 
-* [Saveti po pitanju performansi](http://web.archive.org/web/20140625191431/https://developers.google.com/speed/articles/optimizing-php)
+* [Savjeti po pitanju performansi](http://web.archive.org/web/20140625191431/https://developers.google.com/speed/articles/optimizing-php)
