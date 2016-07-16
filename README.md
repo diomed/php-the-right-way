@@ -2,32 +2,32 @@
 
 ## Pregled
 
-Ovo je GitHub Pages repozitorijum projekta _PHP: The Right Way_ **na srpskom jeziku**. Iza ovog prevoda stoji udruženje [PHP Srbija](http://phpsrbija.rs)
+Ovo je GitHub Pages repozitorij projekta _PHP: The Right Way_ **na srpskom jeziku**. Iza ovog prijevoda stoji udruženje [PHP Srbija](http://phpsrbija.rs)
 - najveće i najpoznatije udruženje PHP programera u Srbiji.
 
 * Ovaj sajt koristi Jekyll.
 * Svaka sekcija i podsekcija su Markdown fajlovi u `_posts/` folderu.
 * Podsekcije u zaglavlju imaju atribut `isChild: true`.
-* Navigacija i struktura stranica se generišu automatski.
+* Navigacija i struktura stranica se generiraju automatski.
 
-## Raširite vest!
+## Raširite vijest!
 
-_PHP: The Right Way_ sadrži web banere koje možete da koristite na vašem sajtu. Pružite nam podršku
-tako što ćete ukazati PHP programerima gde mogu da pronađu kvalitetne informacije!
+_PHP: The Right Way_ sadrži web banere koje možete koristiti na vašem sajtu. Pružite nam podršku
+tako što ćete ukazati PHP programerima gdje mogu pronaći kvalitetne informacije!
 
 [Web baneri](http://www.phptherightway.com/banners.html)
 
 ## Kako da doprinesete
 
-1. _Forkujte_ i izmenite
-2. Opciono instalirajte [Ruby](https://rvm.io/rvm/install/) sa [Jekyll-om](https://github.com/mojombo/jekyll/) kako biste videli sajt u lokalu
+1. _Forkajte_ i izmijenite
+2. Opcionalo instalirajte [Ruby](https://rvm.io/rvm/install/) sa [Jekyll-om](https://github.com/mojombo/jekyll/) kako biste vidjeli sajt u lokalu
 3. Pošaljite pull request na razmatranje
 
-### Uputstvo za saradnike
+### Uputstvo za suradnike
 
-Detaljno uputstvo o tome kako možete doprineti ovom projektu možete naći u [CONTRIBUTING.md](CONTRIBUTING.md) fajlu.
+Detaljno uputstvo o tome kako možete doprinijeti ovom projektu možete naći u [CONTRIBUTING.md](CONTRIBUTING.md) fajlu.
 
-## Gde
+## Gdje
 
 <http://www.phptherightway.com>
 
@@ -53,32 +53,32 @@ Detaljno uputstvo o tome kako možete doprineti ovom projektu možete naći u [C
 * [Turski](http://hkulekci.github.io/php-the-right-way/)
 * [Ukrajinski](http://iflista.github.com/php-the-right-way/)
 
-### Prevodi
+### Prijevodi
 
-Ako ste zainteresovani da prevedete _PHP: The Right Way_, forkujte originalni repozitorijum na GitHub-u
-i objavite vašu lokalizovanu verziju na svom GitHub Pages nalogu. Mi ćemo postaviti link ka vašem prevodu
+Ako ste zainteresirani da prevedete _PHP: The Right Way_, forkajte originalni repozitorij na GitHubu
+i objavite vašu lokaliziranu verziju na svom GitHub Pages nalogu. Mi ćemo postaviti link ka vašem prijevodu
 iz glavnog dokumenta.
 
-Da bismo izbegli fragmentaciju i da ne bismo zbunjivali čitaoce, molimo vas izaberite jednu od sledećih opcija:
+Da bismo izbjegli fragmentaciju i da ne bismo zbunjivali čitatelje, molimo vas izaberite jednu od sljedećih opcija:
 
 1. Link do vašeg GitHub Pages fork-a u formi `[username].github.com/php-the-right-way`
 2. Link do vašeg GitHub Pages fork-a sa poddomenom (npr "sr.phptherightway.com")
 
-Ako koristite poddomen, unesite njegov naziv u `CNAME` dokument i zatražite od nas da podesimo DNS za vas.
-Ako ne koristite poddomen, uklonite `CNAME` dokument iz vašeg repo-a.
+Ako koristite poddomenu, unesite njen naziv u `CNAME` dokument i zatražite od nas da podesimo DNS za vas.
+Ako ne koristite poddomenu, uklonite `CNAME` dokument iz vašeg repoa.
 
-Kada vaš prevod bude spreman, otvorite tiket na Issue Tracker-u i obavestite nas.
+Kada vaš prijevod bude spreman, otvorite tiket na Issue Tracker-u i obavijestite nas.
 
 ## Zašto
 
-U poslednje vreme bilo je dosta reči o tome kako PHP zajednici nedostaje zadovoljavajući i pouzdan izvor informacija
-za nove PHP programere. Ovaj projekat za cilj ima rešavanje tog problema.
+U posljednje vreme bilo je dosta govora o tome kako PHP zajednici nedostaje zadovoljavajući i pouzdan izvor informacija
+za nove PHP programere. Ovaj projekt za cilj ima rješavanje tog problema.
 
 ## Ko
 
 Moje ime je [Josh Lockhart](http://twitter.com/codeguy). Autor sam [Slim Frejmvorka](http://www.slimframework.com/) i radim za [New Media Campaigns](http://www.newmediacampaigns.com/).
 
-### Saradnici
+### Suradnici
 
 * [Kris Jordan](http://krisjordan.com/)
 * [Phil Sturgeon](http://philsturgeon.co.uk/)
