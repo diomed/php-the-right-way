@@ -1,12 +1,12 @@
 ﻿---
 layout: default
 title: Web baneri
-description: "Raširite vest! Upotrebite ove web banere kako biste obavestili nove PHP programere o ovom projektu"
+description: "Raširite vijest! Upotrijebite ove web banere kako biste obavijestili nove PHP programere o ovom projektu"
 ---
 
 # Web baneri
 
-Raširite vest putem _PHP: Pravi način_ banera! Pokažite novim PHP programerima gde da pronađu kvalitetne informacije.
+Raširite vijest putem _PHP: Pravi način_ banera! Pokažite novim PHP programerima gdje da pronađu kvalitetne informacije.
 
 ## Dugme 1 (120x90)
 
@@ -38,7 +38,7 @@ Raširite vest putem _PHP: Pravi način_ banera! Pokažite novim PHP programerim
 </a>
 {% endhighlight %}
 
-## Veliki pravougaonik (386x280)
+## Veliki pravokutnik (386x280)
 
 <p><img src="/images/banners/lg-rect-386x280.png" alt="PHP: Pravi način"/></p>
 
@@ -48,7 +48,7 @@ Raširite vest putem _PHP: Pravi način_ banera! Pokažite novim PHP programerim
 </a>
 {% endhighlight %}
 
-## Srednji pravougaonik (300x250)
+## Srednji pravokutnik (300x250)
 
 <p><img src="/images/banners/med-rect-300x250.png" alt="PHP: Pravi način"/></p>
 
@@ -58,7 +58,7 @@ Raširite vest putem _PHP: Pravi način_ banera! Pokažite novim PHP programerim
 </a>
 {% endhighlight %}
 
-## Pravougaonik (180x150)
+## Pravokutnik (180x150)
 
 <p><img src="/images/banners/rect-180x150.png" alt="PHP: Pravi način"/></p>
 
@@ -78,7 +78,7 @@ Raširite vest putem _PHP: Pravi način_ banera! Pokažite novim PHP programerim
 </a>
 {% endhighlight %}
 
-## Vertikalni pravougaonik (240x400)
+## Vertikalni pravokutnik (240x400)
 
 <p><img src="/images/banners/vert-rect-240x400.png" alt="PHP: Pravi način"/></p>
 
