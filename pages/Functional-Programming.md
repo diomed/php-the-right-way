@@ -76,7 +76,7 @@ pozivu `criteria_greater_than` funkcije).
 
 Rano bind-ovanje se podrazumijevano koristi za uvoz `$min` promjenjive u kreiranu funkciju. Za prave closure-e sa kasnim
 bind-ovanje je potrebno koristiti referencu prilikom uvoza promjenjive. Zamislite neku template biblioteku ili biblioteku za validaciju
-ulaznih podataka, gde se definira closure koji zahvaća promjenjive u opsegu, a pristupa im se kasnije pri izvršavanju anonimne funkcije.
+ulaznih podataka, gdje se definira closure koji zahvaća promjenjive u opsegu, a pristupa im se kasnije pri izvršavanju anonimne funkcije.
 
 * [Pročitajte o anonimnim funkcijama][anonymous-functions]
 * [Više detalja o Closures RFC-u][closures-rfc]
