@@ -15,7 +15,7 @@ Obično je dobra ideja da se vodite nekim uobičajenim šablonama i praksama, za
 
 ## Factory
 
-Jedan od najčešće korištenih dizajn paterna je Factory. U njegovom slučaju, sve što neka klasa radi jeste kreiranje
+Jedan od najčešće korištenih dizajn paterna je Factory. U njegovom slučaju, sve što neka klasa radi jest kreiranje
 objekta kojeg namjeravate koristiti. Pogledajmo sljedeći primjer Factory paterna:
 
 {% highlight php %}
